@@ -22,7 +22,7 @@ func NewHandler(service Service) Handler {
 	return &HandlerImpl{Service: service}
 }
 
-// GetNearbyCabs cab handler
+// AddUser user handler
 func (h *HandlerImpl) AddUser(c *fiber.Ctx) error {
 
 	var user models.User

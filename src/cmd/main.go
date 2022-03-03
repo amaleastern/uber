@@ -17,8 +17,10 @@ func main() {
 	}
 
 	dbHandler := db.Init()
+	// Migrate is for run auto migration for all models
 	db.Migrate(dbHandler)
 
+	// Fiber is an Express inspired web framework built on top of Fasthttp, the fastest HTTP engine for Go.
 	app := fiber.New()
 	routes.Setup(app, dbHandler)
 

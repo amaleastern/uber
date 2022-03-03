@@ -20,7 +20,7 @@ RUN go mod download
 COPY . .
 
 # Build the Go app
-RUN go build -o main .
+RUN go build -o cmd/main .
 
 # Expose port to the outside world
 EXPOSE $PORT

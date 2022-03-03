@@ -6,4 +6,4 @@ build:
 	docker run --env-file .env --network="host" -d --name uber uber
 
 run:
-	go run main.go
+	go run cmd/main.go

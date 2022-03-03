@@ -1,5 +1,16 @@
 # Uber
 
+There are several endpoints exposed
+
+GET     /                               : Health check endpoint
+POST    /user                           : Add User
+GET     /cabs                           : Get nearby cabs
+GET     /bookings/:UserID               : Get Get bookings by user
+POST    /book                           : Book ride
+PUT     /booking/:BookingID/cancel      : Cancel booking
+PUT     /booking/:BookingID/accept      : Accept booking
+PUT     /booking/:BookingID/complete    : Mark ride as completed
+
 ## Pre-Requisite 
 - Docker
 
